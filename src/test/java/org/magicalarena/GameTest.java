@@ -4,6 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 public class GameTest {
     private Player playerA;
@@ -19,6 +20,8 @@ public class GameTest {
 
     @Test
     public void testGameInitialization() {
+        assertNotNull(game.getPlayerA());
+        assertNotNull(game.getPlayerB());
         assertEquals(playerA, game.getPlayerA());
         assertEquals(playerB, game.getPlayerB());
     }
@@ -26,6 +29,7 @@ public class GameTest {
     @Test
     public void testGamePlay() {
         game.playGame();
+        assertNotNull(game.getArena());
         Player winner = playerA.isAlive() ? playerA : playerB;
         assertEquals(winner, game.getArena().getWinner());
     }
