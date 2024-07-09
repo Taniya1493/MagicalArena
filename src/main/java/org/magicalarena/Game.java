@@ -17,6 +17,20 @@ public class Game {
         this.arena = new MagicalArena(playerA, playerB);
     }
 
+    // Getters for playerA and playerB
+    public Player getPlayerA() {
+        return playerA;
+    }
+
+    public Player getPlayerB() {
+        return playerB;
+    }
+
+    // Getter for arena
+    public MagicalArena getArena() {
+        return arena;
+    }
+
     /**
      * Starts the game and manages the fight between players until one player wins.
      */

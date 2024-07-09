@@ -20,8 +20,8 @@ public class MagicalArenaTest {
 
     @Test
     public void testGetWinner() {
-        Player playerA = new Player("Player 1", 50, 5, 10);
-        Player playerB = new Player("Player 2", 100, 10, 5);
+        Player playerA = new Player("Player A", 50, 5, 10);
+        Player playerB = new Player("Player B", 100, 10, 5);
 
         MagicalArena arena = new MagicalArena(playerA, playerB);
         arena.startFight();
