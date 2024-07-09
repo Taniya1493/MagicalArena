@@ -41,6 +41,12 @@ MagicalArena is a simple Java-based game where two players fight in a magical ar
 ## Commit History
 
 Frequent commits with relevant messages for incremental development and better traceability.
+To view the commit history of this project, follow these steps:
+1. Navigate to the project directory in your terminal.
+2. Use the following Git command to view the commit history:
+   ```sh
+    git log --oneline
+    ```
 
 ## Tests
 
